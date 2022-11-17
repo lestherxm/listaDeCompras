@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description"
+        content="Sitio web de aterrizaje de los contenidos creados por Lesther Xitumul Manuel con base a su marca persona: ANDOTI (Another Domain On The Internet)">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lesther Xitumul Manuel">
+    <meta name="keywords" content="HTML, CSS, Desarollo Web, Lista de Compras, Lesther, Xitumul, Manuel">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+    <title>Lista de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>AGREGAR ITEM</h2>
+        <form>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Descripción</span>
+                <textarea class="form-control" aria-label="With textarea"  id="itemDescription" placeholder="¿Qué vas a comprar? 😃"></textarea>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="itemCategory">Categoría</label>
+                <select class="form-select" id="itemCategory">
+                    <option selected>-- Elige una opción --</option>
+                    <option value="1">Frutas</option>
+                    <option value="3">Vegetales</option>
+                    <option value="4">Harinas</option>
+                    <option value="5">Proteínas</option>
+                    <option value="6">Otros</option>
+                    <option value="7">Lácteos</option>
+                    <option value="8">Higiene</option>
+                    <option value="9">Limpieza</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary">AGREGAR</button>
+        </form>
+    </header>
+    <main>
+        <div class="tittle">
+            <h1>LISTA DE COMPRAS</h1>
+        </div>
+        <div class="categoriesContainer">
+            <!-- inicio categoria -->
+            <button class="accordion">Frutas</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="3 Manzanas" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="3 Peras" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 Sandías" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="6 Melones" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Vegetales</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="3 Zanahorias" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 libra de tomates" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 Pepinos" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 libra de frijolitos" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Harinas</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 libra de Arroz" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="3 libras ee avena" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 paquetes de Galletas" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 paquetes de mezcla de panqueques" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Proteínas</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 libra de carne de res" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 libras de camarones" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="3 pezcados frescos" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 cajitas de huevo" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Otros</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 libras de azucar" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="4 sobresitos de maní" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 sobres grandes de salsa" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 botecitos de aderezo" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Lácteos</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="4 cajas de leche deslactosada" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="4 cajas de leche descremada" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="4 cajas de leche entera" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 cajas de leche de almendras" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Higiene</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 jabones para la piel" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="4 rasuradoras" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 botecito de crema para el cabello" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 botecitos de gel anti bacterial" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+
+            <!-- inicio categoria -->
+            <button class="accordion">Limpieza</button>
+            <div class="panel">
+                <ul class="itemsList">
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 botecitos de suavizante para ropa" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="2 galones de desinfectante" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 trapeador" disabled>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                    aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control single-item-list" aria-label="Text input with checkbox"
+                                value="1 escoba" disabled>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin categoria -->
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>

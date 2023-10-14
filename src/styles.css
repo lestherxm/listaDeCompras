@@ -1,12 +1,22 @@
+/* Para navegadores Webkit como Google Chrome */
+::-webkit-scrollbar {
+  width: 8px; /* Cambia el ancho del scroll vertical */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cambia el color de la barra de desplazamiento */
+  border-radius: 4px; /* Añade esquinas redondeadas */
+}
+
+/* Para navegadores Firefox */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f0f0f0; /* Cambia el color del scroll en Firefox */
 }
 
-body {
-    overflow-y: hidden;
-}
 
 header {
     width: 100%;
